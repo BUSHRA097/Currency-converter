@@ -26,7 +26,7 @@ public class MainWindow extends JFrame {
 	private ArrayList<Currency> currencies = Currency.init();
 	
 	/**
-	 * Create the mainWindow frame
+	 * Create the mainWindow frame-
 	 */
 	public MainWindow() {
 		setTitle(BUNDLE.getString("MainWindow.this.title")); //$NON-NLS-1$
@@ -35,16 +35,16 @@ public class MainWindow extends JFrame {
 		setLocationRelativeTo(null);
 		setResizable( false );
 		
-		// Create menu bar
+		// Create menu bar-
 		JMenuBar menuBar = new JMenuBar();
 		setJMenuBar(menuBar);
 		
-		// "File" menu
+		// "File" menu-
 		JMenu mnFile = new JMenu(BUNDLE.getString("MainWindow.mnFile.text")); //$NON-NLS-1$
 		mnFile.setMnemonic(KeyEvent.VK_F);
 		menuBar.add(mnFile);
 		
-		// "Quit" menu item
+		// "Quit" menu item-
 		JMenuItem mntmQuit = new JMenuItem(BUNDLE.getString("MainWindow.mntmQuit.text")); //$NON-NLS-1$
 		mntmQuit.setMnemonic(KeyEvent.VK_Q);		
 		mntmQuit.addActionListener(new ActionListener() {
@@ -107,13 +107,13 @@ public class MainWindow extends JFrame {
 		populate(comboBoxCountry2, currencies);
 		contentPane.add(comboBoxCountry2);
 		
-		// Label "Amount"
+		// Label "Amount"-
 		final JLabel lblAmount = new JLabel(BUNDLE.getString("MainWindow.lblAmount.text")); //$NON-NLS-1$
 		lblAmount.setHorizontalAlignment(SwingConstants.RIGHT);
 		lblAmount.setBounds(23, 108, 69, 15);
 		contentPane.add(lblAmount);
 		
-		// Textfield where the user 
+		// Textfield where the user- 
 		fieldAmount = new JTextField();
 		fieldAmount.setText("0.00");
 		fieldAmount.setBounds(147, 101, 103, 29);
@@ -121,7 +121,7 @@ public class MainWindow extends JFrame {
 		fieldAmount.setColumns(10);
 		fieldAmount.setDocument(new JTextFieldLimit(8));
      	
-		// Label displaying result of conversion
+		// Label displaying result of conversion-
 		final JLabel lblResult = new JLabel("");
 		lblResult.setHorizontalAlignment(SwingConstants.LEFT);
 		lblResult.setBounds(147, 188, 428, 38);
