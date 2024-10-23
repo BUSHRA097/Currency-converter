@@ -58,6 +58,7 @@ When the application starts, CurrencyConverter initializes the GUI and displays 
 The user interacts with MainWindow, which can access AboutWindow to display application information.
 Currency objects are used to store and retrieve exchange values and perform conversions.
 JTextFieldLimit ensures correct data input in text fields.
+
 System Architecture Tree
 CurrencyConverter (Main Class)
 │
