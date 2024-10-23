@@ -28,7 +28,7 @@ public class AboutWindow extends JFrame {
 		setLocationRelativeTo(null);
 		setResizable( false );
 
-		// Window components
+		// Window components.
 		contentPane = new JPanel();
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 		setContentPane(contentPane);
